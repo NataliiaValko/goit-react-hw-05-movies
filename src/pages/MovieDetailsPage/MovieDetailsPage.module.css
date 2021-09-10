@@ -1,0 +1,90 @@
+.button {
+  width: 70px;
+  height: 40px;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: rgb(255, 94, 65);
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.detailsMovie {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.mainInfo__wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.mainInfo__box {
+  margin-bottom: 25px;
+}
+
+.label__flex {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 16px;
+}
+
+.label {
+  composes: label__flex;
+  margin-bottom: 15px;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 1.67;
+  text-decoration: none;
+  color: #686666;
+  margin: 0;
+}
+
+.text__indent {
+  composes: text;
+  text-indent: 20px;
+}
+
+.cardMovie {
+  display: flex;
+}
+
+.image {
+  width: 350px;
+  height: 525px;
+  margin-right: 60px;
+}
+
+.addInfo {
+  margin-top: 40px;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.addInfo__list {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.addInfo__list::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(255, 94, 65);
+}
+
+.addInfo__item:not(:last-child) {
+  margin-top: 0;
+  margin-bottom: 15px;
+}

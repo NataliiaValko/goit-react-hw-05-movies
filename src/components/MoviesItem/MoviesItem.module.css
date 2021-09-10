@@ -1,0 +1,21 @@
+.card__link {
+  display: block;
+  text-decoration: none;
+}
+
+.card__imageWrapper {
+  overflow: hidden;
+  border-radius: 6px;
+  width: 100%;
+  margin-bottom: 7px;
+}
+
+.card__image {
+  object-fit: contain;
+}
+
+.card__title {
+  color: black;
+  margin: 0;
+  font-size: 16px;
+}
