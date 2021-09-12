@@ -38,7 +38,7 @@ const MoviesPage = () => {
       <Container>
         <Searchbar onSubmit={handleFormSubmit} />
         {movies && <MoviesList movies={movies} />}
-        {movies && movies.length === 0 && (
+        {movies?.length === 0 && (
           <p>
             Oops! We couldn’t find anything =/. Change your request, please!
           </p>

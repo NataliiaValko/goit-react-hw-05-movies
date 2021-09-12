@@ -14,9 +14,12 @@ const Searchbar = ({ onSubmit }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    !query && toast.error("Please, enter your request!");
-    query && onSubmit(query);
-    query && setQuery("");
+    if (!query) {
+      toast.error("Please, enter your request!");
+      return;
+    }
+    onSubmit(query);
+    setQuery("");
   };
 
   return (
